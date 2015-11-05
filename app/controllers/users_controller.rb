@@ -4,16 +4,8 @@ class UsersController < ApplicationController
 
   end
 
-  def new
+  def search
     
-  end
-
-  def create
-    
-  end
-
-  def sign_out
-    # redirect_to destroy_user_session_path
   end
 
 private

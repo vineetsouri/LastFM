@@ -1,12 +1,12 @@
 Rails.application.routes.draw do
-  
-  get 'users/sign_out'
 
   devise_for :users
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
-
+  authenticated :user do
+    root :to => 'users#search', :as => :authenticated_root
+  end
 
   # You can have the root of your site routed with "root"
   root 'users#index'

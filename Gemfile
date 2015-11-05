@@ -23,6 +23,7 @@ end
 gem 'bootstrap-sass', '~> 3.3.5'
 gem 'font-awesome-rails'
 gem 'devise'
+gem 'bootswatch-rails'
 
 
 
